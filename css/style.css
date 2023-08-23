@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    width: 100%;
+    height: 100vh;
+  
+   
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    position: relative;
+}
+
+.basic,
+
+.professional {
+    width:450px;
+    height: 400px;
+    margin-left: 10px;
+    height: auto;
+      background-color: #eee;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.basic div
+,.professional div {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 2px;
+
+}
+.basic div:first-child ,
+.professional div:first-child {
+    background-color: red;
+    color: #fff;
+    padding: 1em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; 
+    margin-bottom: 0px;
+}
+
+.professional div:first-child {
+    background-color:#03a9f4;
+}
+
+.container span {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     text-align: center;
+     color: #fff;
+     margin-right: 5px;
+     
+
+}
+
+.basic div:nth-child(2) span {
+        background-color: aqua;
+}
+.basic div:nth-child(3) span {
+        background-color: aqua;
+}
+.basic div:nth-child(4) span {
+        background-color: aqua;
+}
+.basic div:nth-child(5) span {
+        background-color: red;
+}
+.basic div:nth-child(6) span {
+        background-color: red;
+}
+.basic div:nth-child(7) span {
+        background-color: red;
+}
+.professional div:nth-child(2) span {
+        background-color: aqua;
+}
+.professional div:nth-child(3) span {
+        background-color: aqua;
+}
+.professional div:nth-child(4) span {
+        background-color: aqua;
+}
+.professional div:nth-child(5) span {
+        background-color: aqua;
+}
+.professional div:nth-child(6) span {
+        background-color: aqua;
+}
+.professional div:nth-child(7) span {
+        background-color: aqua;
+}
+
+.container::after {
+        content: "Save 50%";
+        width: 129px;
+        height: 30px;
+        background-color: #03a9f4;
+        position: absolute;
+        top: 90px;
+        right: 126px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.container::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    position: absolute;
+    top: 90px;
+    right: 126px;
+    z-index: 1;
+    border: 16px solid #ccc;
+    border-color: transparent #ccc transparent transparent;
+
+}
+
+
+
+
